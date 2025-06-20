@@ -1,7 +1,7 @@
 import psutil
 
 def main():
-    data = psutil.cpu_times(percpu=False)
+    data = psutil.cpu_count()
     datamem = psutil.virtual_memory()
     print(data, "\n", datamem)
 
